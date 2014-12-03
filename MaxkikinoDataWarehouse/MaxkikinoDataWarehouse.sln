@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "MaxkikinoDataWarehouse", "MaxkikinoDataWarehouse\MaxkikinoDataWarehouse.dwproj", "{F9BFAE9C-D713-4B18-A3D0-4C61F1AA2C21}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 1
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://pcejrowski-prv.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F9BFAE9C-D713-4B18-A3D0-4C61F1AA2C21}.Development|Default.ActiveCfg = Development
+		{F9BFAE9C-D713-4B18-A3D0-4C61F1AA2C21}.Development|Default.Build.0 = Development
+		{F9BFAE9C-D713-4B18-A3D0-4C61F1AA2C21}.Development|Default.Deploy.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

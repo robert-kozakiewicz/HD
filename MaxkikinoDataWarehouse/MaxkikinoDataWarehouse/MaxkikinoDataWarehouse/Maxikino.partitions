@@ -1,0 +1,85 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="062c9bac-4b88-481b-8523-51fdc38e5799" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Maxikino</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Dystrybucja</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="fe702588-7138-4781-9158-70506a534e96">
+          <ID>Dystrybucja</ID>
+          <Name>Dystrybucja</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="85cf9110-2638-4d10-8309-4001574a76ec">
+            <DataSourceViewID>Maxikino</DataSourceViewID>
+            <TableID>dbo_Dystrybucja</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Rezyseria</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0b29ddae-ef47-4ed4-b4ca-b551f2798f2c">
+          <ID>Rezyseria</ID>
+          <Name>Rezyseria</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="864283c3-c2d8-41f7-a0f4-affd9b8dcb39">
+            <DataSourceViewID>Maxikino</DataSourceViewID>
+            <TableID>dbo_Rezyseria</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Sprzedaz Biletu</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="9f28e3d7-66e8-4771-b302-e1929e237b06">
+          <ID>Sprzedaz Biletu</ID>
+          <Name>Sprzedaz Biletu</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="4302dd97-65c3-444e-981f-69ccc42cb6ee">
+            <DataSourceViewID>Maxikino</DataSourceViewID>
+            <TableID>dbo_Sprzedaz_biletu</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Raport Reklamowy</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="49041cce-d681-46e1-9018-30a24cd07af5">
+          <ID>Raport Reklamowy</ID>
+          <Name>Raport Reklamowy</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9761d819-258e-488e-af7f-df56c555182d">
+            <DataSourceViewID>Maxikino</DataSourceViewID>
+            <TableID>dbo_Raport_reklamowy</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

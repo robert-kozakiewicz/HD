@@ -1,0 +1,131 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>MaxkikinoDataWarehouse</Database>
+    <Server>PAWELASUS\SQLVER20141128</Server>
+    <ConnectionString>DataSource=PAWELASUS\SQLVER20141128;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>u41hyPPJdt4AKlqNLaKmPND+6PM=2014-11-30 14:27:092014-11-30 10:31:40</TimeStamp>
+        <ID>
+          <String>Maxikino 1</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>XYQ/0AJFZAsIyYuPG72cqJSwXzY=2014-11-30 14:24:212014-11-26 13:48:26</TimeStamp>
+        <ID>
+          <String>Maxikino</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oGyAxvOCpScbXymC34fEtbWtPcU=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Film</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Sonbpr2lhG/QOPVkFsAhUO7vz8k=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Dystrybutor</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>ajKwy3azM0NDcLQ2KeQ5m81LKf4=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Rezyser</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>F9FwYXCI2BgNzlwKZsikFQZy50U=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Sala</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>TxgZ9ag3JbVfySCo9hJXb/ANwUA=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Czas</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Zp/Wrtz2jTlaxY/PGywkovE1wqY=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Data</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>tMnbmCx0HBZxC9zuHUYDFpG7g/o=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Junk</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>sOBFd1MgzNAeVJAIL46AfvruB/Y=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Bilet</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>k7bVQ6j83FlHIA5UjOsvXnTgs3w=2014-11-30 10:29:092014-11-26 14:13:30</TimeStamp>
+        <ID>
+          <String>Data Miesieczna</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>mnGWwgHop/zjN3zfxThy7kIYdx0=2014-11-30 10:29:092014-11-26 14:42:24</TimeStamp>
+        <ID>
+          <String>Numer Seansu</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>FsYc184IrUNbLyxGZu4g2Prcqls=2014-11-30 10:29:092014-11-26 14:50:54</TimeStamp>
+        <ID>
+          <String>Pracownik</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>USkCtSKMP6X6t8M8pCTW6XU9c6s=2014-11-30 10:29:092014-11-26 14:50:54VYrrM4UPr6PoO9epeU00Tef9kk0=2014-11-30 10:29:092014-11-26 13:54:32</TimeStamp>
+        <ID>
+          <String>Maxikino</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>i6gMDymhin1A2k6TWqmAjEa/GOU=2014-11-30 10:29:092014-11-26 13:46:32</TimeStamp>
+      <ID>
+        <String>MaxkikinoDataWarehouse</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2014-11-30T13:27:23.513333Z</LastDeployed>
+</DeploymentSnapshot>
