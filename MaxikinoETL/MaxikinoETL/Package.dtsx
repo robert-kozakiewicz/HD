@@ -1,0 +1,607 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/3/2014 2:05:08 PM"
+  DTS:CreationName="SSIS.Package.3"
+  DTS:CreatorComputerName="PAWEL"
+  DTS:CreatorName="PAWEL\Paweł"
+  DTS:DTSID="{C3DDA97C-0B7D-444F-AC78-6825D0E2EE45}"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:LastModifiedProductVersion="11.0.3436.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="1"
+  DTS:VersionGUID="{6E76A89E-30BC-465A-A1CB-4C6945C6758C}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Slowly Changing Dimension"
+      DTS:CreationName="SSIS.Pipeline.3"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{D2904958-BBF9-49C7-BC2A-0786460858E1}"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Slowly Changing Dimension"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Slowly Changing Dimension\OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Slowly Changing Dimension\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{DB38531B-F9FA-469C-BCC8-2B1873F3B73F}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[PAWEL_SQLVER20141202.maxikino]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Slowly Changing Dimension\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Slowly Changing Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Slowly Changing Dimension\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Slowly Changing Dimension\OLE DB Source"
+              componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="OLE DB Source"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[Pracownik]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Slowly Changing Dimension\OLE DB Source.Connections[OleDbConnection]"
+                  connectionManagerID="{3F9E59DA-4A3B-4428-A659-B73E0FE996C9}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[PAWEL_SQLVER20141202.maxikino_source]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID_pracownika]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID_pracownika]"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[ID_pracownika]"
+                      name="ID_pracownika"
+                      precision="18"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imię]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imię]"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imię]"
+                      name="Imię"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imię2]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imię2]"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Imię2]"
+                      name="Imię2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nazwisko]"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Nazwisko]"
+                      name="Nazwisko"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data_zatrudnienia]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data_zatrudnienia]"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Data_zatrudnienia]"
+                      name="Data_zatrudnienia"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kino_Nazwa]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kino_Nazwa]"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kino_Nazwa]"
+                      name="Kino_Nazwa"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kino_Miasto]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kino_Miasto]"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].Columns[Kino_Miasto]"
+                      name="Kino_Miasto"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ID_pracownika]"
+                      dataType="numeric"
+                      name="ID_pracownika"
+                      precision="18" />
+                    <externalMetadataColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imię]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Imię" />
+                    <externalMetadataColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Imię2]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Imię2" />
+                    <externalMetadataColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Nazwisko]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Nazwisko" />
+                    <externalMetadataColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Data_zatrudnienia]"
+                      dataType="dbDate"
+                      name="Data_zatrudnienia" />
+                    <externalMetadataColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kino_Nazwa]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Kino_Nazwa" />
+                    <externalMetadataColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Kino_Miasto]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Kino_Miasto" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID_pracownika]"
+                      dataType="numeric"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ID_pracownika]"
+                      name="ID_pracownika"
+                      precision="18" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imię]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imię]"
+                      name="Imię" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imię2]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Imię2]"
+                      name="Imię2" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nazwisko]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Nazwisko]"
+                      name="Nazwisko" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data_zatrudnienia]"
+                      dataType="dbDate"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Data_zatrudnienia]"
+                      name="Data_zatrudnienia" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kino_Nazwa]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kino_Nazwa]"
+                      name="Kino_Nazwa" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kino_Miasto]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Kino_Miasto]"
+                      name="Kino_Miasto" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Slowly Changing Dimension\Slowly Changing Dimension"
+              componentClassID="{25BBB0C5-369B-4303-B3DF-D0DC741DEE58}"
+              contactInfo="Slowly Changing Dimension;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;3"
+              description="Updates a SQL Server Analysis Services data warehouse dimension. Update dimension records that are already present and  insert dimension records that aren't. For example, update the DimProduct table of the AdventureWorksDW OLAP database with data from the Products table in the AdventureWorks OLTP database."
+              name="Slowly Changing Dimension"
+              version="3">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SELECT statement used to create a schema rowset."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the WHERE clause in the SELECT statement that selects the current row among rows with identical business keys."
+                  name="CurrentRowWhere"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether historical attribute updates are directed to the transformation output for changing attribute updates."
+                  name="UpdateChangingAttributeHistory">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when columns with fixed attributes contain changes."
+                  name="FailOnFixedAttributeChange">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the column name for the inferred member."
+                  name="InferredMemberIndicator"></property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether inferred member updates are detected."
+                  name="EnableInferredMember">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the transformation fails when a lookup of an existing record fails."
+                  name="FailOnLookupFailure">false</property>
+                <property
+                  dataType="System.UInt32"
+                  description="Specifies that all rows in the input are new or the transformation detects the change type."
+                  name="IncomingRowChangeType"
+                  typeConverter="IncomingRowChangeType">1</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Connections[LookupConnection]"
+                  description="Defines the connection to use for lookups in the dimension table"
+                  name="LookupConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+                  name="Slowly Changing Dimension Input">
+                  <externalMetadataColumns
+                    isUsed="True" />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Outputs[Unchanged Output]"
+                  description="Unchanged rows"
+                  exclusionGroup="1"
+                  name="Unchanged Output"
+                  synchronousInputId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Outputs[New Output]"
+                  description="New rows"
+                  exclusionGroup="1"
+                  name="New Output"
+                  synchronousInputId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Outputs[Fixed Attribute Output]"
+                  description="Rows with changes in columns tagged FixedAttribute"
+                  exclusionGroup="1"
+                  name="Fixed Attribute Output"
+                  synchronousInputId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Outputs[Changing Attribute Updates Output]"
+                  description="These rows contain new information for ChangingAttribute (Type 1) column changes"
+                  exclusionGroup="1"
+                  name="Changing Attribute Updates Output"
+                  synchronousInputId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Outputs[Historical Attribute Inserts Output]"
+                  description="HistoricalAttribute (Type 2) changes result in these new rows"
+                  exclusionGroup="2"
+                  name="Historical Attribute Inserts Output"
+                  synchronousInputId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Outputs[Inferred Member Updates Output]"
+                  description="Information to update unpopulated initial dimension row"
+                  exclusionGroup="1"
+                  name="Inferred Member Updates Output"
+                  synchronousInputId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Slowly Changing Dimension.Paths[OLE DB Source Output]"
+              endId="Package\Slowly Changing Dimension\Slowly Changing Dimension.Inputs[Slowly Changing Dimension Input]"
+              name="OLE DB Source Output"
+              startId="Package\Slowly Changing Dimension\OLE DB Source.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Slowly Changing Dimension"
+          TopLeft="553,79" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Slowly Changing Dimension">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Slowly Changing Dimension\OLE DB Source"
+          TopLeft="80,25" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Slowly Changing Dimension\OLE DB Destination"
+          TopLeft="64,307" />
+        <NodeLayout
+          Size="209,42"
+          Id="Package\Slowly Changing Dimension\Slowly Changing Dimension"
+          TopLeft="123,169" />
+        <EdgeLayout
+          Id="Package\Slowly Changing Dimension.Paths[OLE DB Source Output]"
+          TopLeft="155,67">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="72.5,102"
+              Start="0,0"
+              End="72.5,94.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,47" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,47"
+                    Point2="0,51"
+                    Point3="4,51" />
+                  <mssgle:LineSegment
+                    End="68.5,51" />
+                  <mssgle:CubicBezierSegment
+                    Point1="68.5,51"
+                    Point2="72.5,51"
+                    Point3="72.5,55" />
+                  <mssgle:LineSegment
+                    End="72.5,94.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="28.25,56,16,16"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Slowly Changing Dimension\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Slowly Changing Dimension\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
