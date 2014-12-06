@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="12/3/2014 2:05:08 PM"
@@ -2679,17 +2679,17 @@
           </components>
           <paths>
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Merge Join Output1]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Merge Join Output]"
               endId="Package\Reżyseria i dystrybucja\Multicast.Inputs[Multicast Input 1]"
               name="Merge Join Output"
               startId="Package\Reżyseria i dystrybucja\Merge Join.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Merge Join Output2]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Merge Join Output1]"
               endId="Package\Reżyseria i dystrybucja\Sort 6.Inputs[Sort Input]"
               name="Merge Join Output"
               startId="Package\Reżyseria i dystrybucja\Merge Join 2.Outputs[Merge Join Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Merge Join Output]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Merge Join Output2]"
               endId="Package\Reżyseria i dystrybucja\OLE DB Destination.Inputs[OLE DB Destination Input]"
               name="Merge Join Output"
               startId="Package\Reżyseria i dystrybucja\Merge Join 1.Outputs[Merge Join Output]" />
@@ -2709,47 +2709,47 @@
               name="Multicast Output 3"
               startId="Package\Reżyseria i dystrybucja\Multicast.Outputs[Multicast Output 3]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output2]"
-              endId="Package\Reżyseria i dystrybucja\Sort 3.Inputs[Sort Input]"
+              refId="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output4]"
+              endId="Package\Reżyseria i dystrybucja\Sort.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Reżyseria i dystrybucja\OLE DB Source 2.Outputs[OLE DB Source Output]" />
+              startId="Package\Reżyseria i dystrybucja\Filmy ze starej bazy.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output3]"
-              endId="Package\Reżyseria i dystrybucja\Sort 4.Inputs[Sort Input]"
+              endId="Package\Reżyseria i dystrybucja\Sort 1.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Reżyseria i dystrybucja\OLE DB Source 3.Outputs[OLE DB Source Output]" />
+              startId="Package\Reżyseria i dystrybucja\Filmy z hurtowni.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output4]"
+              refId="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output2]"
               endId="Package\Reżyseria i dystrybucja\Sort 5.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Reżyseria i dystrybucja\OLE DB Source 4.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output1]"
-              endId="Package\Reżyseria i dystrybucja\Sort 1.Inputs[Sort Input]"
+              endId="Package\Reżyseria i dystrybucja\Sort 4.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Reżyseria i dystrybucja\Filmy z hurtowni.Outputs[OLE DB Source Output]" />
+              startId="Package\Reżyseria i dystrybucja\OLE DB Source 3.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output]"
-              endId="Package\Reżyseria i dystrybucja\Sort.Inputs[Sort Input]"
+              endId="Package\Reżyseria i dystrybucja\Sort 3.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Reżyseria i dystrybucja\Filmy ze starej bazy.Outputs[OLE DB Source Output]" />
+              startId="Package\Reżyseria i dystrybucja\OLE DB Source 2.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output2]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output]"
               endId="Package\Reżyseria i dystrybucja\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Reżyseria i dystrybucja\Sort 2.Outputs[Sort Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output3]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output1]"
               endId="Package\Reżyseria i dystrybucja\Merge Join 1.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Reżyseria i dystrybucja\Sort 3.Outputs[Sort Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output2]"
               endId="Package\Reżyseria i dystrybucja\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Reżyseria i dystrybucja\Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output6]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output3]"
               endId="Package\Reżyseria i dystrybucja\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Reżyseria i dystrybucja\Sort 5.Outputs[Sort Output]" />
@@ -2764,7 +2764,7 @@
               name="Sort Output"
               startId="Package\Reżyseria i dystrybucja\Sort 6.Outputs[Sort Output]" />
             <path
-              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output1]"
+              refId="Package\Reżyseria i dystrybucja.Paths[Sort Output6]"
               endId="Package\Reżyseria i dystrybucja\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Reżyseria i dystrybucja\Sort 1.Outputs[Sort Output]" />
@@ -4543,7 +4543,7 @@
           Id="Package\Reżyseria i dystrybucja\Sort 1"
           TopLeft="285,170" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output]"
+          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output4]"
           TopLeft="159,74">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4577,7 +4577,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output1]"
+          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output3]"
           TopLeft="374.5,73">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4615,7 +4615,7 @@
           Id="Package\Reżyseria i dystrybucja\Merge Join"
           TopLeft="209,272" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output2]"
           TopLeft="205,211">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4649,7 +4649,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output1]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output6]"
           TopLeft="338.5,212">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4695,7 +4695,7 @@
           Id="Package\Reżyseria i dystrybucja\Sort 3"
           TopLeft="504,442" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output2]"
+          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output]"
           TopLeft="585.5,392">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4733,7 +4733,7 @@
           Id="Package\Reżyseria i dystrybucja\Merge Join 1"
           TopLeft="418,524" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output2]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output]"
           TopLeft="417.5,485">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4767,7 +4767,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output3]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output1]"
           TopLeft="557.5,484">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4805,7 +4805,7 @@
           Id="Package\Reżyseria i dystrybucja\OLE DB Destination"
           TopLeft="399,610" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Merge Join Output]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Merge Join Output2]"
           TopLeft="486,566">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4831,7 +4831,7 @@
           Id="Package\Reżyseria i dystrybucja\Multicast"
           TopLeft="213,343" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Merge Join Output1]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Merge Join Output]"
           TopLeft="273.5,314">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4895,7 +4895,7 @@
           Id="Package\Reżyseria i dystrybucja\Sort 4"
           TopLeft="32,444" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output3]"
+          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output1]"
           TopLeft="88,383">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -4997,7 +4997,7 @@
           Id="Package\Reżyseria i dystrybucja\Sort 5"
           TopLeft="238,620" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output4]"
+          Id="Package\Reżyseria i dystrybucja.Paths[OLE DB Source Output2]"
           TopLeft="291.5,576">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -5023,7 +5023,7 @@
           Id="Package\Reżyseria i dystrybucja\Sort 6"
           TopLeft="62,620" />
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Merge Join Output2]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Merge Join Output1]"
           TopLeft="119,576">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -5083,7 +5083,7 @@
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output6]"
+          Id="Package\Reżyseria i dystrybucja.Paths[Sort Output3]"
           TopLeft="291.5,662">
           <EdgeLayout.Curve>
             <mssgle:Curve

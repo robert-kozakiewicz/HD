@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="PAWEL_SQLVER20141202.maxikino_source"
-  DTS:DTSID="{3F9E59DA-4A3B-4428-A659-B73E0FE996C9}"
+  DTS:ObjectName="BERCIK.maxikino_zwykle"
+  DTS:DTSID="{370075BA-997E-4444-B1B2-E16934A29AD2}"
   DTS:CreationName="OLEDB">
   <DTS:ObjectData>
     <DTS:ConnectionManager

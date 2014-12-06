@@ -1,4 +1,4 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:ObjectName="PAWEL_SQLVER20141202.maxikino_source"
   DTS:DTSID="{3F9E59DA-4A3B-4428-A659-B73E0FE996C9}"
