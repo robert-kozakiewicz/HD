@@ -476,7 +476,7 @@ END
 SET IsHolidayUSA = CASE WHEN HolidayUSA  IS NULL THEN 0 WHEN HolidayUSA  IS NOT NULL THEN 1 END
 /*****************************************************************************************/
 
-SELECT date,DayOfYear dayname, DayOfWeekUK, month, year, IsHolidayUK, isholidayusa, SwietoLubNormalny, WeekendLubPracujacy, PoraRoku, DzienTygodnia, Miesiac  FROM [dbo].[DimDate]
+--SELECT date,DayOfYear dayname, DayOfWeekUK, month, year, IsHolidayUK, isholidayusa, SwietoLubNormalny, WeekendLubPracujacy, PoraRoku, DzienTygodnia, Miesiac  FROM [dbo].[DimDate]
 
 
 update dbo.DimDate
@@ -544,7 +544,7 @@ set DzienTygodnia = 'niedziela'
 where DayOfWeekUK = 7
 go
 
-SELECT date,DayOfYear dayname, DayOfWeekUK, month, year, IsHolidayUK, isholidayusa, SwietoLubNormalny, WeekendLubPracujacy, PoraRoku, DzienTygodnia, Miesiac  FROM [dbo].[DimDate]
+--SELECT date,DayOfYear dayname, DayOfWeekUK, month, year, IsHolidayUK, isholidayusa, SwietoLubNormalny, WeekendLubPracujacy, PoraRoku, DzienTygodnia, Miesiac  FROM [dbo].[DimDate]
 
 update dbo.DimDate
 set Miesiac= 'styczeñ'
