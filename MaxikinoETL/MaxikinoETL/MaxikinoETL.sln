@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MaxikinoETL", "MaxikinoETL\MaxikinoETL.dtproj", "{1648CC67-B073-48D8-BDD7-4CE630BF76DD}"
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "MaxikinoETL", "MaxikinoETL.dtproj", "{14417899-D68F-4598-8D69-5056C3A51D8D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Development|Default = Development|Default
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{1648CC67-B073-48D8-BDD7-4CE630BF76DD}.Development|Default.ActiveCfg = Development
-		{1648CC67-B073-48D8-BDD7-4CE630BF76DD}.Development|Default.Build.0 = Development
+		{14417899-D68F-4598-8D69-5056C3A51D8D}.Development|Default.ActiveCfg = Development
+		{14417899-D68F-4598-8D69-5056C3A51D8D}.Development|Default.Build.0 = Development
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
