@@ -2,11 +2,11 @@
   <Database>
     <DataSources>
       <DataSource>
-        <ID>Maxikino 1</ID>
-        <ConnectionString>Provider=SQLNCLI11.1;Data Source=PAWELASUS\SQLVER20141128;Integrated Security=SSPI;Initial Catalog=maxikino</ConnectionString>
+        <ID>Maxikino</ID>
+        <ConnectionString>Provider=SQLNCLI11.1;Data Source=PAWEL\SQLVER20141202;Integrated Security=SSPI;Initial Catalog=maxikino</ConnectionString>
         <ImpersonationInfo>
           <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateAccount</ImpersonationMode>
-          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Pawel</Account>
+          <Account xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Paweł</Account>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">PasswordRemoved</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>

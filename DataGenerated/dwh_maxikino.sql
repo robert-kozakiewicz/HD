@@ -58,7 +58,7 @@ CREATE TABLE [dbo].[Dystrybucja](
 GO
 CREATE TABLE [dbo].[Dystrybutor](
 	[ID_dystrybutora] int IDENTITY(1,1),
-	[Nazwa] [varchar](20) NULL,
+	[Nazwa] [varchar](30) NULL,
  CONSTRAINT [Dystrybutor_PK] PRIMARY KEY CLUSTERED 
 (
 	[ID_dystrybutora] ASC
@@ -69,7 +69,7 @@ CREATE TABLE [dbo].[Film](
 	[ID_filmu] int IDENTITY(1,1),
 	[Tytul] [varchar](60) NULL,
 	[Gatunek] [varchar](20) NULL,
-	[RokPremiery] [numeric](4, 0) NULL,
+	[RokPremiery] [varchar](4) NULL,
  CONSTRAINT [Film_PK] PRIMARY KEY CLUSTERED 
 (
 	[ID_filmu] ASC
@@ -101,8 +101,8 @@ CREATE TABLE [dbo].[Pracownik](
 GO
 CREATE TABLE [dbo].[Raport_reklamowy](
 	[ID_raportu] int IDENTITY(1,1),
-	[CzasAntenowyReklamTelewizyjnych] [numeric](18, 0) NULL,
-	[CzasAntenowyReklamRadiowych] [numeric](18, 0) NULL,
+	[CzasAntenowyReklamTelewizyjnych] [numeric](18, 2) NULL,
+	[CzasAntenowyReklamRadiowych] [numeric](18, 2) NULL,
 	[LiczbaWystapienWPrasie] [numeric](28, 0) NULL,
 	[SzacowanyKosztReklam] [numeric](28, 0) NULL,
 	[Data_miesieczna_ID_daty_miesiecznej] int NOT NULL,

@@ -1,0 +1,447 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fee02d36-d0c2-4d37-b016-2575a9d133a9" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Maxikino</ID>
+  <Name>Maxikino</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Maxikino</DataSourceID>
+  <Schema>
+    <xs:schema id="Maxikino" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Maxikino" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="026f6627-0964-42d8-9384-8f94c0fb3e9a">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Bilet" msprop:design-time-name="42562207-310c-43f3-81fe-c816a8b7f57d" msprop:DbTableName="Bilet" msprop:FriendlyName="Bilet" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_biletu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="ae9784da-ad5a-4c2e-a25f-fbc15d53e514" msprop:DbColumnName="ID_biletu" msprop:FriendlyName="ID_biletu" type="xs:int" />
+                  <xs:element name="Rodzaj" msprop:design-time-name="472337ce-4f9a-4058-a4de-5c51d8471134" msprop:DbColumnName="Rodzaj" msprop:FriendlyName="Rodzaj" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Technologia" msprop:design-time-name="6688ca66-5fea-4136-a7ee-bae0e18d8d57" msprop:DbColumnName="Technologia" msprop:FriendlyName="Technologia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Czas" msprop:design-time-name="b80d010a-2696-403d-9641-76a3c924c030" msprop:DbTableName="Czas" msprop:FriendlyName="Czas" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_czasu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="56d6e5bb-2462-4510-8ced-19dcd1f92de1" msprop:DbColumnName="ID_czasu" msprop:FriendlyName="ID_czasu" type="xs:int" />
+                  <xs:element name="Godzina" msprop:design-time-name="a3f88cab-616b-429c-8790-68fd8f286c05" msprop:DbColumnName="Godzina" msprop:FriendlyName="Godzina" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="5" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PoraDnia" msprop:design-time-name="e788ee16-c474-4460-9beb-2d9d838fdd6f" msprop:DbColumnName="PoraDnia" msprop:FriendlyName="PoraDnia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Data" msprop:design-time-name="32daaccd-a749-4cac-be5d-18e29b83a9aa" msprop:DbTableName="Data" msprop:FriendlyName="Data" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_daty" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="68bf4524-1a24-442f-beda-74774b9a4e47" msprop:DbColumnName="ID_daty" msprop:FriendlyName="ID_daty" type="xs:int" />
+                  <xs:element name="Data" msprop:design-time-name="4c500e1a-1479-4de1-9216-28ceda142e41" msprop:DbColumnName="Data" msprop:FriendlyName="Data" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="Rok" msprop:design-time-name="b7e6671d-c5b6-4ca8-a012-41f8a024f0d0" msprop:DbColumnName="Rok" msprop:FriendlyName="Rok" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Miesiac" msprop:design-time-name="f6d2782f-774a-417b-866f-d15b4ac94bbf" msprop:DbColumnName="Miesiac" msprop:FriendlyName="Miesiac" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="DzienTygodnia" msprop:design-time-name="5907dd7e-0c37-48d8-a01e-9c5f2c8376cc" msprop:DbColumnName="DzienTygodnia" msprop:FriendlyName="DzienTygodnia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="PoraRoku" msprop:design-time-name="c578178b-30c8-4d66-8422-1116e4445d82" msprop:DbColumnName="PoraRoku" msprop:FriendlyName="PoraRoku" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Swieto" msprop:design-time-name="39d50cae-20a0-4149-b461-d0b06e580e5f" msprop:DbColumnName="Swieto" msprop:FriendlyName="Swieto" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RodzajDnia" msprop:design-time-name="5a1b0b44-da99-419b-b798-068138b2f4c9" msprop:DbColumnName="RodzajDnia" msprop:FriendlyName="RodzajDnia" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Data_miesieczna" msprop:design-time-name="5d480a51-5043-4753-a06e-4c8ad37acadc" msprop:DbTableName="Data_miesieczna" msprop:FriendlyName="Data_miesieczna" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_daty_miesiecznej" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="34c4d369-1fc4-44d9-9242-1d0753b408be" msprop:DbColumnName="ID_daty_miesiecznej" msprop:FriendlyName="ID_daty_miesiecznej" type="xs:int" />
+                  <xs:element name="Miesiac" msprop:design-time-name="5b192127-6f44-47fa-b2dd-56be0a89cd96" msprop:DbColumnName="Miesiac" msprop:FriendlyName="Miesiac" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Rok" msprop:design-time-name="ae2ecaed-5dc7-4125-a309-6724e6c0f04a" msprop:DbColumnName="Rok" msprop:FriendlyName="Rok" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dystrybucja" msprop:design-time-name="27927ed7-cf3a-449e-b298-4a097f7b8db0" msprop:DbTableName="Dystrybucja" msprop:FriendlyName="Dystrybucja" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Dystrybutor_ID_dystrybutora" msprop:design-time-name="2046a19e-254c-4319-99ed-ee51741eeaf7" msprop:DbColumnName="Dystrybutor_ID_dystrybutora" msprop:FriendlyName="Dystrybutor_ID_dystrybutora" type="xs:int" />
+                  <xs:element name="Film_ID_filmu" msprop:design-time-name="4cea1cf7-6f23-4ac0-809e-c7ba10922eea" msprop:DbColumnName="Film_ID_filmu" msprop:FriendlyName="Film_ID_filmu" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dystrybutor" msprop:design-time-name="598d8a3c-85b2-4af5-880e-00f986b42294" msprop:DbTableName="Dystrybutor" msprop:FriendlyName="Dystrybutor" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_dystrybutora" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="90e34ff1-333b-45f0-aae5-4a4931b8a21a" msprop:DbColumnName="ID_dystrybutora" msprop:FriendlyName="ID_dystrybutora" type="xs:int" />
+                  <xs:element name="Nazwa" msprop:design-time-name="7bb36cbc-152a-4c0f-b65b-732d8acf5f54" msprop:DbColumnName="Nazwa" msprop:FriendlyName="Nazwa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Film" msprop:design-time-name="450e5f98-951c-4e82-a405-55c638ac8f58" msprop:DbTableName="Film" msprop:FriendlyName="Film" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_filmu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="92e910ef-8606-408f-8d11-44c6eec02740" msprop:DbColumnName="ID_filmu" msprop:FriendlyName="ID_filmu" type="xs:int" />
+                  <xs:element name="Tytul" msprop:design-time-name="b402da8a-ac7d-442a-a6f2-8b0fa92672ba" msprop:DbColumnName="Tytul" msprop:FriendlyName="Tytul" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="60" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Gatunek" msprop:design-time-name="47001043-eb92-41b8-916b-08094f0c2b6d" msprop:DbColumnName="Gatunek" msprop:FriendlyName="Gatunek" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="RokPremiery" msprop:design-time-name="f1d33746-68f3-4c61-8b30-cb442ae935a6" msprop:DbColumnName="RokPremiery" msprop:FriendlyName="RokPremiery" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Junk" msprop:design-time-name="6ee26e23-4bb0-4c62-a5b8-c3760da10eaa" msprop:DbTableName="Junk" msprop:FriendlyName="Junk" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_junk" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="0602a02e-0011-45d6-bd08-af4e91083b9c" msprop:DbColumnName="ID_junk" msprop:FriendlyName="ID_junk" type="xs:int" />
+                  <xs:element name="Informacje" msprop:design-time-name="67ac3cf8-1602-4a37-a55e-a5d4ac77129b" msprop:DbColumnName="Informacje" msprop:FriendlyName="Informacje" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Kino" msprop:design-time-name="981705bb-753b-47b2-af45-a38d5f8d67d6" msprop:DbTableName="Kino" msprop:FriendlyName="Kino" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_kina" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="4d9abd05-6834-4946-948d-c9258616c0b8" msprop:DbColumnName="ID_kina" msprop:FriendlyName="ID_kina" type="xs:int" />
+                  <xs:element name="Nazwa" msprop:design-time-name="0271f393-5dd7-43e1-b6c6-98f3cc23366b" msprop:DbColumnName="Nazwa" msprop:FriendlyName="Nazwa" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Miasto" msprop:design-time-name="8f00b492-613a-432b-8fbf-a8459d8d927f" msprop:DbColumnName="Miasto" msprop:FriendlyName="Miasto" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="30" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Pracownik" msprop:design-time-name="a1d734f7-2b4c-4a98-b6c3-c3867edca739" msprop:DbTableName="Pracownik" msprop:FriendlyName="Pracownik" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_pracownika" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="da2ecb09-ccbe-46ea-8f39-5b0a072649c6" msprop:DbColumnName="ID_pracownika" msprop:FriendlyName="ID_pracownika" type="xs:int" />
+                  <xs:element name="PESEL" msprop:design-time-name="07fe4e2b-3f10-4db5-b5da-50abdbf67559" msprop:DbColumnName="PESEL" msprop:FriendlyName="PESEL" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="11" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="ImieINazwisko" msprop:design-time-name="a64064dc-e159-43fd-95be-33ed91499c93" msprop:DbColumnName="ImieINazwisko" msprop:FriendlyName="ImieINazwisko" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Aktualnosc" msprop:design-time-name="05cd33b4-fd8d-4f0f-980b-49259113b066" msprop:DbColumnName="Aktualnosc" msprop:FriendlyName="Aktualnosc" type="xs:boolean" />
+                  <xs:element name="Pracownik_ID_szefa" msprop:design-time-name="41b8b7fe-b3c4-4246-8439-47e82022000e" msprop:DbColumnName="Pracownik_ID_szefa" msprop:FriendlyName="Pracownik_ID_szefa" type="xs:int" minOccurs="0" />
+                  <xs:element name="Kino_ID_kina" msprop:design-time-name="12696b3f-c896-4f91-b4bc-58d095c3f51c" msprop:DbColumnName="Kino_ID_kina" msprop:FriendlyName="Kino_ID_kina" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Raport_reklamowy" msprop:design-time-name="319ff9b2-e36e-450b-aac3-163140196760" msprop:DbTableName="Raport_reklamowy" msprop:FriendlyName="Raport_reklamowy" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_raportu" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="5c774ff7-0cb8-48e7-bdf9-e01dcfea44dc" msprop:DbColumnName="ID_raportu" msprop:FriendlyName="ID_raportu" type="xs:int" />
+                  <xs:element name="CzasAntenowyReklamTelewizyjnych" msprop:design-time-name="6963b1be-bdc9-4cdc-a8d8-9c2b315be9aa" msprop:DbColumnName="CzasAntenowyReklamTelewizyjnych" msprop:FriendlyName="CzasAntenowyReklamTelewizyjnych" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CzasAntenowyReklamRadiowych" msprop:design-time-name="1b71f1d4-4aa5-4dd2-84d3-47153d1cb9e9" msprop:DbColumnName="CzasAntenowyReklamRadiowych" msprop:FriendlyName="CzasAntenowyReklamRadiowych" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="LiczbaWystapienWPrasie" msprop:design-time-name="3ed3fa04-f9e0-4748-b19b-9228f90e827e" msprop:DbColumnName="LiczbaWystapienWPrasie" msprop:FriendlyName="LiczbaWystapienWPrasie" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="SzacowanyKosztReklam" msprop:design-time-name="d5d1da31-bb13-498d-b52a-d7978f8f14d9" msprop:DbColumnName="SzacowanyKosztReklam" msprop:FriendlyName="SzacowanyKosztReklam" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Data_miesieczna_ID_daty_miesiecznej" msprop:design-time-name="080453e0-bb5e-4717-afaf-ba5f309009cc" msprop:DbColumnName="Data_miesieczna_ID_daty_miesiecznej" msprop:FriendlyName="Data_miesieczna_ID_daty_miesiecznej" type="xs:int" />
+                  <xs:element name="Film_ID_filmu" msprop:design-time-name="0d8f682e-ff56-4c2d-beae-60aa57669b13" msprop:DbColumnName="Film_ID_filmu" msprop:FriendlyName="Film_ID_filmu" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Rezyser" msprop:design-time-name="93b0fd11-549c-4486-a9d0-0a2d3aee2e87" msprop:DbTableName="Rezyser" msprop:FriendlyName="Rezyser" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_rezysera" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="85b03812-7cb7-489b-815f-c6c389692106" msprop:DbColumnName="ID_rezysera" msprop:FriendlyName="ID_rezysera" type="xs:int" />
+                  <xs:element name="ImieINazwisko" msprop:design-time-name="a746b6a5-b988-42db-83f6-bda386fedff0" msprop:DbColumnName="ImieINazwisko" msprop:FriendlyName="ImieINazwisko" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Rezyseria" msprop:design-time-name="a2355bca-7f38-4ece-8501-c26943d0f419" msprop:DbTableName="Rezyseria" msprop:FriendlyName="Rezyseria" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Rezyser_ID_rezysera" msprop:design-time-name="ffb742a1-f06d-4ac2-82ee-5f949f154bb9" msprop:DbColumnName="Rezyser_ID_rezysera" msprop:FriendlyName="Rezyser_ID_rezysera" type="xs:int" />
+                  <xs:element name="Film_ID_filmu" msprop:design-time-name="05d28d9a-6e43-48ce-bf23-660e632e90d9" msprop:DbColumnName="Film_ID_filmu" msprop:FriendlyName="Film_ID_filmu" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Sala" msprop:design-time-name="18bab139-8a5f-4ee3-a97c-b3ec635db2fe" msprop:DbTableName="Sala" msprop:FriendlyName="Sala" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ID_sali" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:design-time-name="fc989545-3cc3-4064-be31-1e592b614f55" msprop:DbColumnName="ID_sali" msprop:FriendlyName="ID_sali" type="xs:int" />
+                  <xs:element name="Numer_sali" msprop:design-time-name="bdb0c002-b7f5-4cfb-8bf0-9a7a6483974d" msprop:DbColumnName="Numer_sali" msprop:FriendlyName="Numer_sali" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Kino_ID_kina" msprop:design-time-name="b940648f-bdcb-4588-a921-c3050b38cbb8" msprop:DbColumnName="Kino_ID_kina" msprop:FriendlyName="Kino_ID_kina" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Sprzedaz_biletu" msprop:design-time-name="7cfe01e9-2ca4-4a06-8592-bf9ddb108bf2" msprop:DbTableName="Sprzedaz_biletu" msprop:FriendlyName="Sprzedaz_biletu" msprop:DbSchemaName="dbo" msprop:TableType="Table">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Ilosc" msprop:design-time-name="dba8f3c3-1250-4b5b-9b0a-286af95023ab" msprop:DbColumnName="Ilosc" msprop:FriendlyName="Ilosc" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="CenaKupna" msprop:design-time-name="af129696-1301-4c32-b8eb-ac2fb0ed9485" msprop:DbColumnName="CenaKupna" msprop:FriendlyName="CenaKupna" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Numer_seansu" msprop:design-time-name="0fdcda96-dee7-4909-a152-782cf4080cfd" msprop:DbColumnName="Numer_seansu" msprop:FriendlyName="Numer_seansu" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Zapelnienie" msprop:design-time-name="6c237f61-44c0-4d47-9f6a-9df01b096637" msprop:DbColumnName="Zapelnienie" msprop:FriendlyName="Zapelnienie" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="Godzina_seansu" msprop:design-time-name="faccfd2f-1df3-4d79-9f0c-1088b7f6e4cd" msprop:DbColumnName="Godzina_seansu" msprop:FriendlyName="Godzina_seansu" type="xs:int" />
+                  <xs:element name="Data_seansu" msprop:design-time-name="8813c0e4-9f12-460e-a670-a0e69e903cae" msprop:DbColumnName="Data_seansu" msprop:FriendlyName="Data_seansu" type="xs:int" />
+                  <xs:element name="Czas_sprzedazy" msprop:design-time-name="86765f38-01a7-4873-8f36-5b97c943c7ef" msprop:DbColumnName="Czas_sprzedazy" msprop:FriendlyName="Czas_sprzedazy" type="xs:int" />
+                  <xs:element name="Data_Sprzedazy" msprop:design-time-name="7cb00710-bcef-49e9-a182-eb9bc13007f6" msprop:DbColumnName="Data_Sprzedazy" msprop:FriendlyName="Data_Sprzedazy" type="xs:int" />
+                  <xs:element name="Pracownik_ID_pracownika" msprop:design-time-name="796c018a-ca58-42e0-9534-5d3912d4a857" msprop:DbColumnName="Pracownik_ID_pracownika" msprop:FriendlyName="Pracownik_ID_pracownika" type="xs:int" />
+                  <xs:element name="Bilet_ID_biletu" msprop:design-time-name="5c771ac2-d42f-411b-8563-bc66c212d654" msprop:DbColumnName="Bilet_ID_biletu" msprop:FriendlyName="Bilet_ID_biletu" type="xs:int" />
+                  <xs:element name="Sala_ID_sali" msprop:design-time-name="9745875b-63d9-4e49-bec4-aad82cafd2b4" msprop:DbColumnName="Sala_ID_sali" msprop:FriendlyName="Sala_ID_sali" type="xs:int" />
+                  <xs:element name="Film_ID_filmu" msprop:design-time-name="a617b521-7b09-4931-a075-d09bf5c3ccc8" msprop:DbColumnName="Film_ID_filmu" msprop:FriendlyName="Film_ID_filmu" type="xs:int" />
+                  <xs:element name="Junk_ID_junku" msprop:design-time-name="4636b26a-b35b-4870-aa9f-0d8fc51b5fe7" msprop:DbColumnName="Junk_ID_junku" msprop:FriendlyName="Junk_ID_junku" type="xs:int" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Bilet" />
+          <xs:field xpath="ID_biletu" />
+        </xs:unique>
+        <xs:unique name="dbo_Czas_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Czas" />
+          <xs:field xpath="ID_czasu" />
+        </xs:unique>
+        <xs:unique name="dbo_Data_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Data" />
+          <xs:field xpath="ID_daty" />
+        </xs:unique>
+        <xs:unique name="dbo_Data_miesieczna_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Data_miesieczna" />
+          <xs:field xpath="ID_daty_miesiecznej" />
+        </xs:unique>
+        <xs:unique name="dbo_Dystrybutor_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dystrybutor" />
+          <xs:field xpath="ID_dystrybutora" />
+        </xs:unique>
+        <xs:unique name="dbo_Film_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Film" />
+          <xs:field xpath="ID_filmu" />
+        </xs:unique>
+        <xs:unique name="dbo_Junk_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Junk" />
+          <xs:field xpath="ID_junk" />
+        </xs:unique>
+        <xs:unique name="dbo_Kino_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Kino" />
+          <xs:field xpath="ID_kina" />
+        </xs:unique>
+        <xs:unique name="dbo_Pracownik_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Pracownik" />
+          <xs:field xpath="ID_pracownika" />
+        </xs:unique>
+        <xs:unique name="dbo_Raport_reklamowy_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Raport_reklamowy" />
+          <xs:field xpath="ID_raportu" />
+        </xs:unique>
+        <xs:unique name="dbo_Rezyser_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Rezyser" />
+          <xs:field xpath="ID_rezysera" />
+        </xs:unique>
+        <xs:unique name="dbo_Sala_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Sala" />
+          <xs:field xpath="ID_sali" />
+        </xs:unique>
+        <xs:keyref name="Sprzedaz_biletu_Data2_FK" refer="dbo_Data_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Data_seansu" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Film_FK" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Film_ID_filmu" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Bilet_FK" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Bilet_ID_biletu" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Junk_FK" refer="dbo_Junk_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Junk_ID_junku" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Czas_FK" refer="dbo_Czas_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Godzina_seansu" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Data_FK" refer="dbo_Data_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Data_Sprzedazy" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Pracownik_FK" refer="dbo_Pracownik_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Pracownik_ID_pracownika" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Czas2_FK" refer="dbo_Czas_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Czas_sprzedazy" />
+        </xs:keyref>
+        <xs:keyref name="Sprzedaz_biletu_Sala_FK" refer="dbo_Sala_Constraint1">
+          <xs:selector xpath=".//dbo_Sprzedaz_biletu" />
+          <xs:field xpath="Sala_ID_sali" />
+        </xs:keyref>
+        <xs:keyref name="Sala_Kino_FK" refer="dbo_Kino_Constraint1">
+          <xs:selector xpath=".//dbo_Sala" />
+          <xs:field xpath="Kino_ID_kina" />
+        </xs:keyref>
+        <xs:keyref name="Rezyserstwo_Film_FK" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_Rezyseria" />
+          <xs:field xpath="Film_ID_filmu" />
+        </xs:keyref>
+        <xs:keyref name="Rezyserstwo_Rezyser_FK" refer="dbo_Rezyser_Constraint1">
+          <xs:selector xpath=".//dbo_Rezyseria" />
+          <xs:field xpath="Rezyser_ID_rezysera" />
+        </xs:keyref>
+        <xs:keyref name="Raport_reklamowy_Film_FK" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_Raport_reklamowy" />
+          <xs:field xpath="Film_ID_filmu" />
+        </xs:keyref>
+        <xs:keyref name="Raport_reklamowy_Data_miesieczna_FK" refer="dbo_Data_miesieczna_Constraint1">
+          <xs:selector xpath=".//dbo_Raport_reklamowy" />
+          <xs:field xpath="Data_miesieczna_ID_daty_miesiecznej" />
+        </xs:keyref>
+        <xs:keyref name="Pracownik_Szef_FK" refer="dbo_Pracownik_Constraint1">
+          <xs:selector xpath=".//dbo_Pracownik" />
+          <xs:field xpath="Pracownik_ID_szefa" />
+        </xs:keyref>
+        <xs:keyref name="Pracownik_Kino_FK" refer="dbo_Kino_Constraint1">
+          <xs:selector xpath=".//dbo_Pracownik" />
+          <xs:field xpath="Kino_ID_kina" />
+        </xs:keyref>
+        <xs:keyref name="Dystrybucja_Dystrybutor_FK" refer="dbo_Dystrybutor_Constraint1">
+          <xs:selector xpath=".//dbo_Dystrybucja" />
+          <xs:field xpath="Dystrybutor_ID_dystrybutora" />
+        </xs:keyref>
+        <xs:keyref name="Dystrybucja_Film_FK" refer="dbo_Film_Constraint1">
+          <xs:selector xpath=".//dbo_Dystrybucja" />
+          <xs:field xpath="Film_ID_filmu" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <Maxikino xmlns="" />
+  </Schema>
+</DataSourceView>

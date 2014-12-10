@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>PAWELASUS\SQLVER20141128</TargetServer>
+        <TargetServer>PAWEL\SQLVER20141202</TargetServer>
         <TargetDatabase>MaxkikinoDataWarehouse</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>
