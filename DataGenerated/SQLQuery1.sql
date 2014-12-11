@@ -21,8 +21,9 @@ EXEC sp_MSforeachtable 'Select ''?'', count(*) from ?'
 select * from maxikino.dbo.junk;
 select * from maxikino.dbo.Dystrybucja;
 
-update maxikino_source.dbo.Dystrybutor
-set Nazwa_dystrybutora = SUBSTRING(nazwa_dystrybutora,1,20);
+
+use [maxikino_source]
+go
 
 delete from maxikino.dbo.Sprzedaz_biletu
 

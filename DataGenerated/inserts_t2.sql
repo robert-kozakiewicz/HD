@@ -7,8 +7,7 @@ exec sp_MSforeachtable 'ALTER TABLE ? CHECK CONSTRAINT ALL'
 exec sp_MSforeachtable 'ALTER TABLE ? ENABLE TRIGGER ALL' 
 
 EXEC sp_MSforeachtable 'Select ''?'', count(*) from ?'
-use [maxikino_source]
-go
+
 BULK insert Dystrybutor from "C:/DataGenerated/20140601/Dystrybutor.bulk" with (fieldterminator='|', rowterminator='\n')
 bulk insert Film from "C:/DataGenerated/20140601/Film.bulk" with (fieldterminator='|', rowterminator='\n')
 bulk insert Bilet from "C:/DataGenerated/20140601/Bilety.bulk" with (fieldterminator='|', rowterminator='\n')
